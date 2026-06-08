@@ -1,5 +1,6 @@
 import type { Tarefa } from "./tarefa";
 import React from "react";
+import '../style/criartarefa.css';
 interface CriarTarefaProps {
     aoCriarTarefa: (tarefa: Tarefa) => void;
 
@@ -28,7 +29,7 @@ export function CriarTarefa({ aoCriarTarefa }: CriarTarefaProps) {
 
     return (
         <div>
-            <h2>Criar Nova Tarefa</h2>
+            <h2 className="title">Criar Nova Tarefa</h2>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="titulo">Título:</label>

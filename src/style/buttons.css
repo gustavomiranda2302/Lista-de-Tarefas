@@ -1,0 +1,31 @@
+button{
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    color: #3272b3;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+button[type="submit"]{
+    display: flex;
+    align-self: flex-end;
+    justify-self: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    
+
+}
+select{
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    color: #3272b3;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+select:focus{
+    background-color: #6093ca;
+    color: #fff;
+}

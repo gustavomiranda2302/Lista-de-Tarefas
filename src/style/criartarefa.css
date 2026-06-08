@@ -1,0 +1,14 @@
+h2{
+    color: #fff;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+label{
+    color: #fff;
+    font-weight: bold;
+}
