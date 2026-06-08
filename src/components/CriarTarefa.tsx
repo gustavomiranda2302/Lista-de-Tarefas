@@ -32,6 +32,7 @@ export function CriarTarefa({ aoCriarTarefa }: CriarTarefaProps) {
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="titulo">Título:</label>
+
                     <input type="text" id="titulo" name="titulo" required />
                     <label htmlFor="descricao">Descrição:</label>
                     <textarea id="descricao" name="descricao" required></textarea>
@@ -45,13 +46,6 @@ export function CriarTarefa({ aoCriarTarefa }: CriarTarefaProps) {
 
                 </div>
                 <button type="submit">Adicionar Tarefa</button>
-
-
-
-
-
-
-
             </form>
         </div>
 
