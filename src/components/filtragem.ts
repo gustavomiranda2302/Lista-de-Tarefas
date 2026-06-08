@@ -30,9 +30,13 @@ export function Filtragem(tarefas: Tarefa[]) {
   }
 }
 */
-export function Filtragem(tarefas: Tarefa[]) {
-  const tarefaConcluida = tarefas.filter((tarefa) => tarefa.concluida === true);
-  const tarefaPendente = tarefas.filter((tarefa) => tarefa.concluida === false);
-  const todas = tarefas;
-  return { tarefaConcluida, tarefaPendente, todas };
+export function Filtragem(tarefas: Tarefa[], st: status) {
+  if (st === "concluida") {
+    return tarefas.filter((tarefa) => tarefa.concluida === true);
+  } else if (st === "pendente") {
+    return tarefas.filter((tarefa) => tarefa.concluida === false);
+  } else {
+    return tarefas;
+  }
 }
+export type status = "concluida" | "pendente" | "todas";
