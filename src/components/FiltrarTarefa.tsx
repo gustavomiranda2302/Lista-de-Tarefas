@@ -1,7 +1,4 @@
-import React from "react";
-import type { Tarefa } from "./tarefa";
 import type { status } from "./filtragem";
-
 
 
 interface FiltrarTarefaProps {
@@ -14,9 +11,9 @@ export function FiltrarTarefa({ st, onChange }: FiltrarTarefaProps) {
     return (
         <div>
 
-            <button onClick={() => onChange("todas")}>Todas</button>
-            <button onClick={() => onChange("concluida")}>Concluídas</button>
-            <button onClick={() => onChange("pendente")}>Pendentes</button>
+            <button className={st === "todas" ? "ativo" : ""} onClick={() => onChange("todas")}>Todas</button>
+            <button className={st === "concluida" ? "ativo" : ""} onClick={() => onChange("concluida")}>Concluídas</button>
+            <button className={st === "pendente" ? "ativo" : ""} onClick={() => onChange("pendente")}>Pendentes</button>
         </div>
 
 
